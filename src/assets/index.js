@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import website from "./website.png";
 
 import css from "./tech/css.png";
 import figma from "./tech/figma.png";
@@ -23,9 +24,9 @@ import java from "./tech/java.png";
 import infosupport from "./company/infosupport.png";
 import hogent from "./company/hogent.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import b2b from "./b2b.png";
+import stardew from "./stardew.png";
+import klauwaerts from "./klauwaerts.png";
 
 export {
   logo,
@@ -34,6 +35,7 @@ export {
   mobile,
   web,
   github,
+  website,
   menu,
   close,
   css,
@@ -50,7 +52,7 @@ export {
   typescript,
   infosupport,
   hogent,
-  carrent,
-  jobit,
-  tripguide,
+  b2b,
+  stardew,
+  klauwaerts,
 };

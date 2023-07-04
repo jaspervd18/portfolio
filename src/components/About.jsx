@@ -15,7 +15,7 @@ const ServiceCard = ({ index, title, icon }) => {
       >
         <div
           options={{
-            max: 10,
+            max: 1,
             scale: 1,
             speed: 450,
           }}
@@ -43,7 +43,10 @@ const About = () => {
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
         variants={fadeIn("", "", 0.1, 1)}
       >
-        I am a student
+        I am currently studying Applied Computer Sciences at the University of
+        Applied Sciences and Arts (HOGENT). I am a passionate developer who is
+        always looking for new challenges. I love to learn new things and adapt
+        these to my projects.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">

@@ -15,9 +15,9 @@ import {
   java,
   git,
   figma,
-  carrent,
-  jobit,
-  tripguide,
+  b2b,
+  stardew,
+  klauwaerts,
   infosupport,
   hogent,
 } from "../assets";
@@ -164,16 +164,43 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "B2B Platform",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows users to order products and manage orders, providing a convenient and efficient solution for B2B needs.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "mysql",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: b2b,
+    live_demo_link: "https://delaware.oliviergilquin.be/",
+    source_code_link:
+      "https://github.com/HoGentProjectenII/2023-frontend-gent07",
+  },
+  {
+    name: "Stardew Hub",
+    description:
+      "A twitter-like social media platform for Stardew Valley players, allowing them to share their progress, tips, and tricks with other players.",
+    tags: [
+      {
+        name: "t3stack",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "prisma",
         color: "green-text-gradient",
       },
       {
@@ -181,50 +208,31 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: stardew,
+    live_demo_link: "https://social-media-app-eta-tawny.vercel.app/",
+    source_code_link: "https://github.com/jaspervd18/social_media_app",
   },
   {
-    name: "Job IT",
+    name: "Sports club Manage Tool",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A web-based tool that allows sports clubs to manage their members, coaches, and lessons. It also provides a calendar for the members to see when their lessons are.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "express",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "prisma",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: klauwaerts,
+    live_demo_link: "",
+    source_code_link: "https://github.com/jaspervd18/frontend-klauwaerts",
   },
 ];
 
