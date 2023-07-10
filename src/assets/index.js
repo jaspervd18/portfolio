@@ -3,7 +3,6 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import website from "./website.png";
@@ -27,6 +26,11 @@ import hogent from "./company/hogent.png";
 import b2b from "./b2b.png";
 import stardew from "./stardew.png";
 import klauwaerts from "./klauwaerts.png";
+
+import facebook from "./facebook.png";
+import instagram from "./instagram.png";
+import linkedin from "./linkedin.png";
+import github from "./github.png";
 
 export {
   logo,
@@ -55,4 +59,7 @@ export {
   b2b,
   stardew,
   klauwaerts,
+  facebook,
+  instagram,
+  linkedin,
 };

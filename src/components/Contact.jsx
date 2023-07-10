@@ -1,10 +1,46 @@
 import { useState, useRef } from "react";
+import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
+import { fadeIn, textVariant } from "../utils/motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { contacts } from "../constants";
+
+const ContactCard = ({ index, name, icon }) => {
+  return (
+    <Tilt
+      options={{
+        max: 10,
+        scale: 1.05,
+        speed: 450,
+      }}
+      className="w-16 xs:w-20"
+    >
+      <motion.div
+        variants={fadeIn("top", "spring", 0.5 * index, 0.75)}
+        className="p-[1px] rounded-[20px]"
+      >
+        <div
+          options={{
+            max: 1,
+            scale: 1,
+            speed: 450,
+          }}
+          className="bg-tertiary rounded-[20px] items-center px-2 py-2"
+        >
+          <img
+            src={icon}
+            alt={name}
+            className="w-12 h-12 xs:w-16 xs:h-16 object-contain"
+          />
+        </div>
+      </motion.div>
+    </Tilt>
+  );
+};
 
 const Contact = () => {
   const formRef = useRef();
@@ -58,7 +94,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="xl:mt-12 xl:flex-row flex-col flex gap-5 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -114,10 +150,11 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1  xl:h-auto md:h-[550px] h-[350px]"
-      ></motion.div>
+      <div className="grid grid-cols-4 xl:grid-cols-1 gap-10 lg:content-start">
+        {contacts.map((contact, index) => (
+          <ContactCard key={contact.name} index={index} {...contact} />
+        ))}
+      </div>
     </div>
   );
 };

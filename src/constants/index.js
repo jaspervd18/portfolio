@@ -20,6 +20,10 @@ import {
   klauwaerts,
   infosupport,
   hogent,
+  github,
+  linkedin,
+  facebook,
+  instagram,
 } from "../assets";
 
 export const navLinks = [
@@ -117,7 +121,7 @@ const experiences = [
     points: [
       "Very solid and broad knowledge of various IT subjects.",
       "Building practical exercises since day one.",
-      "Specialization in minor Mobile & Enterprise Development",
+      "Specialization in Mobile & Enterprise Development.",
     ],
   },
   {
@@ -215,7 +219,7 @@ const projects = [
   {
     name: "Sports club Manage Tool",
     description:
-      "A web-based tool that allows sports clubs to manage their members, coaches, and lessons. It also provides a calendar for the members to see when their lessons are.",
+      "A tool that allows sports clubs to manage their member and lessons. It provides a calendar for the members to see when their lessons are.",
     tags: [
       {
         name: "react",
@@ -231,9 +235,35 @@ const projects = [
       },
     ],
     image: klauwaerts,
-    live_demo_link: "",
+    live_demo_link: "https://frontend-klauwaerts.onrender.com/",
     source_code_link: "https://github.com/jaspervd18/frontend-klauwaerts",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const contacts = [
+  {
+    name: "GitHub",
+    icon: github,
+  },
+  {
+    name: "LinkedIn",
+    icon: linkedin,
+  },
+  {
+    name: "Facebook",
+    icon: facebook,
+  },
+  {
+    name: "Instagram",
+    icon: instagram,
+  },
+];
+
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  contacts,
+};
