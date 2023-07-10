@@ -9,7 +9,7 @@ import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import { contacts } from "../constants";
 
-const ContactCard = ({ index, name, icon }) => {
+const ContactCard = ({ index, name, icon, social_media_link }) => {
   return (
     <Tilt
       options={{
@@ -31,11 +31,13 @@ const ContactCard = ({ index, name, icon }) => {
           }}
           className="bg-tertiary rounded-[20px] items-center px-2 py-2"
         >
-          <img
-            src={icon}
-            alt={name}
-            className="w-12 h-12 xs:w-16 xs:h-16 object-contain"
-          />
+          <a href={social_media_link} target="_blank">
+            <img
+              src={icon}
+              alt={name}
+              className="w-12 h-12 xs:w-16 xs:h-16 object-contain"
+            />
+          </a>
         </div>
       </motion.div>
     </Tilt>

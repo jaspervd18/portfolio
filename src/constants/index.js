@@ -244,18 +244,22 @@ const contacts = [
   {
     name: "GitHub",
     icon: github,
+    social_media_link: "https://github.com/jaspervd18",
   },
   {
     name: "LinkedIn",
     icon: linkedin,
+    social_media_link: "https://www.linkedin.com/in/jaspervandyck/",
   },
   {
     name: "Facebook",
     icon: facebook,
+    social_media_link: "https://www.facebook.com/jaspervd18/",
   },
   {
     name: "Instagram",
     icon: instagram,
+    social_media_link: "https://www.instagram.com/jaspervd18/",
   },
 ];
 
