@@ -5,6 +5,8 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { SectionWrapper } from "../hoc";
+import React from "react";
+import Icon from "./Icon";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -28,7 +30,7 @@ const ServiceCard = ({ index, title, icon }) => {
           }}
           className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
         >
-          <img src={icon} alt={title} className="w-16 h-1/6 object-contain" />
+          <Icon icon={icon} className='text-white w-16 h-16' />
           <h3 className="text-white text=[20px] font-bold text-center">
             {title}
           </h3>
@@ -51,7 +53,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
       >
         I am currently studying Applied Computer Sciences at the University of
-        Applied Sciences and Arts (HOGENT). I am a passionate developer who is
+        Applied Sciences and Arts (Hogeschool Gent). I am a passionate developer who is
         always looking for new challenges. I love to learn new things and adapt
         these to my projects.
       </motion.p>

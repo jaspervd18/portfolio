@@ -26,6 +26,11 @@ import {
   instagram,
 } from "../assets";
 
+import { Laptop2 } from "lucide-react";
+import { Cog } from "lucide-react";
+import { ServerCog } from "lucide-react";
+import { TabletSmartphone } from "lucide-react";
+
 export const navLinks = [
   {
     id: "about",
@@ -44,19 +49,19 @@ export const navLinks = [
 const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: Laptop2,
   },
   {
     title: "Enterprise Developer",
-    icon: mobile,
+    icon: Cog,
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: ServerCog,
   },
   {
     title: "Mobile Developer",
-    icon: creator,
+    icon: TabletSmartphone,
   },
 ];
 
@@ -132,8 +137,7 @@ const experiences = [
     date: "Aug 2023",
     points: [
       "Developing full-stack web application with Next.js (frontend) and .NET (backend).",
-      "Designed and implemented an application for efficient discovery of care providers through a relevance matching system.",
-      "Ensuring high-quality product delivery through effective team coordination.",
+      "Developed an application for efficient discovery of care providers through a relevance matching system.",
       "Implementing responsive design for an optimal user experience.",
       "Active participation in code reviews and process improvement.",
     ],
@@ -236,8 +240,7 @@ const projects = [
       },
     ],
     image: klauwaerts,
-    live_demo_link: "https://frontend-klauwaerts.onrender.com/",
-    source_code_link: "https://github.com/jaspervd18/frontend-klauwaerts",
+    live_demo_link: "https://wiki-klauwaerts.vercel.app/",
   },
 ];
 
