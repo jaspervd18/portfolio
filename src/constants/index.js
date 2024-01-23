@@ -125,16 +125,17 @@ const experiences = [
     ],
   },
   {
-    title: "React Web Developer",
+    title: "Full-Stack Developer",
     company_name: "Info Support",
     icon: infosupport,
     iconBg: "#FFF",
     date: "Aug 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developing full-stack web application with Next.js (frontend) and .NET (backend).",
+      "Designed and implemented an application for efficient discovery of care providers through a relevance matching system.",
+      "Ensuring high-quality product delivery through effective team coordination.",
+      "Implementing responsive design for an optimal user experience.",
+      "Active participation in code reviews and process improvement.",
     ],
   },
 ];
