@@ -1,12 +1,13 @@
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
+import { profielfoto } from "../assets";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className="relative w-full h-screen mx-auto">
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#4790FC]" />
@@ -18,11 +19,15 @@ const Hero = () => {
             Hi, I'm <span className="text-[#4790FC]">Jasper</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-gray-500`}>
-            I develop user interface and{" "}
-            <br className="sm:block hidden" />
-            web applications
+            I develop web-, mobile- and software applications
           </p>
         </div>
+
+        <img
+          src={profielfoto}
+          alt="Profile picture"
+          className="w-40 h-40 lg:w-64 lg:h-64 rounded-full mx-auto shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+        />
       </div>
 
       <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
