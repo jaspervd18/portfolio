@@ -6,13 +6,11 @@ import { technologies } from "../constants";
 
 const Tech = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center gap-10">
+    <Marquee fade={true}>
       {technologies.map((technology) => (
-        <div className="w-28 h-28" key={technology.name}>
-          <BallCanvas icon={technology.icon} />
-        </div>
+        <img key={technology.name} src={technology.icon} className="w-28 h-28 rounded-full"></img>
       ))}
-    </div>
+    </Marquee>
   );
 };
 
