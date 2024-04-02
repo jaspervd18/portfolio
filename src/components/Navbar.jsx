@@ -44,8 +44,8 @@ const Navbar = () => {
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
           <p className="text-gray-700 text-[18px] font-bold cursor-pointer flex ">
-            Jasper &nbsp;
-            <span className="sm:block hidden"> | Front-End Web Developer</span>
+            Jasper&nbsp;
+            <span className="sm:block hidden"> | Developer</span>
           </p>
         </Link>
 
