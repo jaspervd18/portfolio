@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { github, website } from "../assets";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../lib/motion";
 import { projects } from "../constants";
 
 const ProjectCard = ({

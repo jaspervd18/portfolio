@@ -1,5 +1,5 @@
 import "../index.css";
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 const Marquee = ({
   children,

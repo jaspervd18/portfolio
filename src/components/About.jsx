@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { services } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../lib/motion";
 import { SectionWrapper } from "../hoc";
 import React from "react";
 import Icon from "./Icon";
@@ -15,12 +15,14 @@ const ServiceCard = ({ index, title, icon }) => {
         max: 10,
         scale: 1.05,
         speed: 450,
+        transition: true,
+        easing: "cubic-bezier(.03,.98,.52,.99)"
       }}
       className="xs:w-[250px] w-full"
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full p-[1px] rounded-[20px] shadow-card"
+        className="w-full p-[1px] rounded-[20px] shadow-card es"
       >
         <div
           options={{
