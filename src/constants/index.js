@@ -17,10 +17,9 @@ import {
   hogent,
   github,
   linkedin,
-  facebook,
-  instagram,
   delaware,
   nationaleloterij,
+  githubblack,
 } from "../assets";
 
 import { Laptop2 } from "lucide-react";
@@ -153,36 +152,9 @@ const experiences = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
   {
-    name: "Nationale Loterij",
+    name: "National Lottery",
     description:
       "Platform that allows users to motivate the young adience of buying lottery tickets, while at the same time supporting a good cause of their choice.",
     tags: [
@@ -191,7 +163,7 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "typescript",
         color: "pink-text-gradient",
       },
     ],
@@ -247,7 +219,7 @@ const projects = [
 const contacts = [
   {
     name: "GitHub",
-    icon: github,
+    icon: githubblack,
     social_media_link: "https://github.com/jaspervd18",
   },
   {
@@ -255,23 +227,6 @@ const contacts = [
     icon: linkedin,
     social_media_link: "https://www.linkedin.com/in/jaspervandyck/",
   },
-  {
-    name: "Facebook",
-    icon: facebook,
-    social_media_link: "https://www.facebook.com/jaspervd18/",
-  },
-  {
-    name: "Instagram",
-    icon: instagram,
-    social_media_link: "https://www.instagram.com/jaspervd18/",
-  },
 ];
 
-export {
-  services,
-  technologies,
-  experiences,
-  testimonials,
-  projects,
-  contacts,
-};
+export { services, technologies, experiences, projects, contacts };

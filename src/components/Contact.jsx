@@ -120,6 +120,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="What's your name?"
                 className="bg-[#F1F1F1] py-3 px-6 placeholder:text-secondary text-black rounded-full border border-primary font-medium shadow-lg"
+                required
               />
             </label>
             <label className="flex flex-col">
@@ -131,6 +132,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="What's your email?"
                 className="bg-[#F1F1F1] py-3 px-6 placeholder:text-secondary text-black rounded-full border border-primary font-medium shadow-lg"
+                required
               />
             </label>
             <label className="flex flex-col">
@@ -142,6 +144,7 @@ const Contact = () => {
                 onChange={handleChange}
                 placeholder="What do you want to say?"
                 className="bg-[#F1F1F1] py-3 px-6 placeholder:text-secondary text-black rounded-2xl border border-primary font-medium shadow-lg"
+                required
               />
             </label>
 
@@ -153,12 +156,6 @@ const Contact = () => {
             </button>
           </form>
         </div>
-
-        {/* <div className="grid grid-cols-4 xl:grid-cols-1 gap-10 lg:content-start">
-          {contacts.map((contact, index) => (
-            <ContactCard key={contact.name} index={index} {...contact} />
-          ))}
-        </div> */}
       </div>
     </>
   );

@@ -24,16 +24,14 @@ import nationaleloterij from "./nationale-loterij.png";
 import stardew from "./stardew.png";
 import klauwaerts from "./klauwaerts.png";
 
-import facebook from "./facebook.png";
-import instagram from "./instagram.png";
 import linkedin from "./linkedin.png";
 import github from "./github.png";
+import githubblack from "./github-black.png";
 
 import profielfoto from "./profielfoto.jpg";
 
 export {
   logo,
-  github,
   menu,
   close,
   website,
@@ -55,8 +53,8 @@ export {
   nationaleloterij,
   stardew,
   klauwaerts,
-  facebook,
-  instagram,
+  github,
+  githubblack,
   linkedin,
   profielfoto,
 };

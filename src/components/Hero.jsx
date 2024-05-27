@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { profielfoto } from "../assets";
+import { contacts } from "../constants";
 
 const Hero = () => {
   return (
@@ -21,6 +22,22 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-gray-500`}>
             I develop web-, mobile- and software applications
           </p>
+          <div className="flex flex-row gap-1 mt-4">
+            {contacts.map(
+              ({ name, icon, social_media_link: link }) =>
+                link && (
+                  <a
+                    key={name}
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mr-3"
+                  >
+                    <img src={icon} className="h-8 w-8 hover:scale-105 transition-transform duration-300 ease-in-out"/>
+                  </a>
+                )
+            )}
+          </div>
         </div>
 
         <img
