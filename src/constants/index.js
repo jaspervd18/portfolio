@@ -11,7 +11,6 @@ import {
   java,
   git,
   figma,
-  b2b,
   stardew,
   klauwaerts,
   infosupport,
@@ -20,6 +19,8 @@ import {
   linkedin,
   facebook,
   instagram,
+  delaware,
+  nationaleloterij,
 } from "../assets";
 
 import { Laptop2 } from "lucide-react";
@@ -122,20 +123,32 @@ const experiences = [
     points: [
       "Very solid and broad knowledge of various IT subjects.",
       "Building practical exercises since day one.",
-      "Specialization in Mobile & Enterprise Development.",
+      "Major in Mobile & Enterprise Development.",
     ],
   },
   {
-    title: "Full-Stack Developer",
+    title: "Full-Stack Developer (student job)",
     company_name: "Info Support",
     icon: infosupport,
     iconBg: "#FFF",
     date: "Aug 2023",
     points: [
-      "Developing full-stack web application with Next.js (frontend) and .NET (backend).",
+      "Developing full-stack web application with Next.js (frontend) and .NET Core (backend).",
       "Developed an application for efficient discovery of care providers through a relevance matching system.",
       "Implementing responsive design for an optimal user experience.",
       "Active participation in code reviews and process improvement.",
+    ],
+  },
+  {
+    title: "Internship",
+    company_name: "delaware",
+    icon: delaware,
+    iconBg: "#FFF",
+    date: "Feb 2024 - May 2024",
+    points: [
+      "Developing a full-stack web application with Blazor (frontend) and .NET Core (backend).",
+      "Implementing gamification strategies for an extended user experience.",
+      "Working as a team to deliver a high-quality product to the customer.",
     ],
   },
 ];
@@ -169,31 +182,22 @@ const testimonials = [
 
 const projects = [
   {
-    name: "B2B Platform",
+    name: "Nationale Loterij",
     description:
-      "Web-based platform that allows users to order products and manage orders, providing a convenient and efficient solution for B2B needs.",
+      "Platform that allows users to motivate the young adience of buying lottery tickets, while at the same time supporting a good cause of their choice.",
     tags: [
       {
-        name: "react",
+        name: "vite.js",
         color: "blue-text-gradient",
-      },
-      {
-        name: "mysql",
-        color: "green-text-gradient",
       },
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
-      {
-        name: "restapi",
-        color: "orange-text-gradient",
-      },
     ],
-    image: b2b,
-    live_demo_link: "https://delaware.oliviergilquin.be/",
-    source_code_link:
-      "https://github.com/HoGentProjectenII/2023-frontend-gent07",
+    image: nationaleloterij,
+    live_demo_link: "https://nationale-loterij.vercel.app/",
+    source_code_link: "https://github.com/jaspervd18/nationale_loterij",
   },
   {
     name: "Stardew Hub",

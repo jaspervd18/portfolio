@@ -26,7 +26,7 @@ const Hero = () => {
         <img
           src={profielfoto}
           alt="Profile picture"
-          className="w-40 h-40 lg:w-64 lg:h-64 rounded-full mx-auto shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
+          className="hidden md:block w-40 h-40 lg:w-64 lg:h-64 rounded-full mx-auto shadow-2xl hover:scale-105 transition-transform duration-300 ease-in-out"
         />
       </div>
 

@@ -18,8 +18,9 @@ import java from "./tech/java.png";
 
 import infosupport from "./company/infosupport.png";
 import hogent from "./company/hogent.png";
+import delaware from "./company/delaware.jpg";
 
-import b2b from "./b2b.png";
+import nationaleloterij from "./nationale-loterij.png";
 import stardew from "./stardew.png";
 import klauwaerts from "./klauwaerts.png";
 
@@ -50,7 +51,8 @@ export {
   typescript,
   infosupport,
   hogent,
-  b2b,
+  delaware,
+  nationaleloterij,
   stardew,
   klauwaerts,
   facebook,
